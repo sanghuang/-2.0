@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>登陆</title>
+    <style>
+        a{
+            color: #666 !important;
+            text-decoration: none!important;
+        }
+        .w{
+    width: 1200px;
+    margin:0 auto;
+}
+header{
+    height: 84px;
+    border-bottom: 2px solid #c81523;
+}
+.logo{
+    padding-top:18px;
+}
+         #fo_rm{
+            margin-top: 200px;
+        }
+        #dlym{
+             font-weight: bold; 
+             font-size:24px;
+             padding-bottom: 6px;
+        }
+        #ipt_text,#ipt_password{
+            background-color: antiquewhite;
+            outline: none;
+            width: 180px;
+            height: 15px;
+        }
+        #mm_img{
+            position: relative;
+        }
+        #mm_img img{
+            bottom: 2px;
+            right:6px;
+            width: 15px;
+            position: absolute;
+        }
+        #ipt_button{
+            width: 65px;
+            height: 33px;
+            font-size: 15px;
+            font-weight: bold;
+            margin-top: 6px;
+        } 
+        .mod_copyright{
+    text-align: center;
+    padding-top: 180px;
+}
+.links{
+    margin-bottom: 15px;
+}
+.links a{
+    margin:0 3px;
+    font-size: 14px;
+}
+.links a:hover{
+    color: #c81523 !important;
+    cursor: pointer;
+}
+.copyright{
+    line-height: 20px;
+    font-size: 14px!important;
+}
+.box{
+    width: 74px;
+    height: 88px;
+    position: relative;
+    border: 1px solid #ccc;
+    margin:90px 0 0 900px;
+    font-size: 12px;
+    text-align: center;
+    color: #f40;
+}
+.box img{
+    width: 60px;
+    margin-top: 5px;
+}
+.close-btn{
+    position: absolute;
+    top: -1px;
+    left: -16px;
+    width: 14px;
+    height: 14px;
+    border: 1px solid #ccc;
+    line-height: 14px;
+    font-family: Arial, Helvetica, sans-serif;
+    cursor: pointer;
+}
+    </style>
+</head>
+<body>
+    <div class="w">
+        <header>
+            <div class="logo">
+                <a href="index.html"><img src="images/logo.png" alt=""></a>
+            </div>
+            <div class="box">
+                淘宝二维码
+                <img src="images/erwima.png" alt="">
+                <i class="close-btn">X</i>
+            </div>
+        </header>
+        <form method="POST" action="#" id="fo_rm">
+           <table align="center" >
+            <th>
+             <td align="center" id="dlym">登陆页面</td>
+             </th>
+            <tr>
+             <td>账号：</td>
+            <td><input type="text" value="" id="ipt_text"></td>
+            </tr>
+            <tr>
+            <td>密码：</td>
+            <td><input type="password" value="" id="ipt_password"/>
+                <label form="" id="mm_img"><img src="https://img2.baidu.com/it/u=1220446905,1185946036&fm=253&fmt=auto&app=138&f=JPEG?w=44&h=36" id="img"></label>
+            </td>
+            </tr>
+            <th>
+             <td align="center"><input type="button" id="ipt_button" value="登陆">
+             </td>
+            </th>
+            </table>
+            </form>
+            <footer>
+                <div class="mod_copyright">
+                    <div class="links">
+                         <a href="#"> 关于我们</a>| <a href="#"> 联系我们</a>| <a href="#">联系客服</a>|<a href="#"> 合作招商</a> |<a href="#">关于我们</a> |<a href="#">联系我们</a>| <a href="#">联系客服</a>| <a href="#">合作招商</a>
+                    </div>
+                    <div class="copyright">
+                     京公网安备1000020000881京ICP备11041704号1 ICP| 互 联网药品信息服务资格证编号(原经营性-2014-0008|新出发京零 字第大120007号<br>
+                     互联网出版许可证编号新出网证(京字150号1出版物经营许可证1 网络文化经 营许可证京网文[2020]6112-1201号1违法和不良信息 举报电话: 4006561155
+                    </div>
+                </div>
+            </footer>
+    </div>
+        <script>
+            var ipt_form=document.querySelector("#fo_rm");
+             var ipt_text=document.querySelector("#ipt_text");
+             var ipt_password=document.querySelector("#ipt_password");
+             var ipt_password_img=document.querySelector("#img");
+             var ipt_button=document.querySelector("#ipt_button");
+                var time=3;
+        ipt_button.addEventListener('click',function(){
+            if(ipt_text.value==="www" && ipt_password.value==="666"){
+                alert("登陆成功，请稍等")
+                ipt_button.disable=true;
+            }
+            else if(ipt_text.value.length==0 && ipt_password.value.length==0){
+                alert("请输入账号和密码！");
+            }
+            else if(ipt_text.value.length==0 && ipt_password.value.length !=0){
+                alert("请输入账号！");
+            }else if(ipt_text.value.length!=0 && ipt_password.value.length ==0){
+                alert("请输入密码！");
+            }
+            else if(ipt_text.value!=="www" || ipt_password.value!=="666"){
+                alert("账号或密码有误！");
+             }
+        
+});
+
+// 密码眼睛部分
+         var flag=true;
+         ipt_password_img.addEventListener('click',function(){
+            if(flag==true){
+                ipt_password.type="text";
+                ipt_password_img.src="https://img1.baidu.com/it/u=3207016726,3176272130&fm=253&fmt=auto&app=138&f=JPEG?w=51&h=42";
+                flag=false;
+            }else{
+                 ipt_password.type="password"; 
+                 ipt_password_img.src="https://img2.baidu.com/it/u=1220446905,1185946036&fm=253&fmt=auto&app=138&f=JPEG?w=44&h=36";
+                 flag=true;
+            }
+         });
+
+//关闭二维码
+         var btn=document.querySelector(".close-btn");
+         var box=document.querySelector(".box");
+         btn.onclick=function(){
+            box.style.display='none';
+         }
+        </script>
+</body>
+</html>

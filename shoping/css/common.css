@@ -1,0 +1,25 @@
+/* 引入箭头 要注意路径 */
+@font-face {
+    font-family: 'icomoon';
+    src:  url('../fonts/icomoon.eot?qqt91e');
+    src:  url('../fonts/icomoon.eot?qqt91e#iefix') format('embedded-opentype'),
+      url('../fonts/icomoon.ttf?qqt91e') format('truetype'),
+      url('../fonts/icomoon.woff?qqt91e') format('woff'),
+      url('../fonts/icomoon.svg?qqt91e#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+}
+/* 引入购物车 */
+@font-face {
+    font-family: 'icomoon';
+    src:  url('../fonts2/icomoon.eot?uu07hs');
+    src:  url('../fonts2/icomoon.eot?uu07hs#iefix') format('embedded-opentype'),
+      url('../fonts2/icomoon.ttf?uu07hs') format('truetype'),
+      url('../fonts2/icomoon.woff?uu07hs') format('woff'),
+      url('../fonts2/icomoon.svg?uu07hs#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+  }
+

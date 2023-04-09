@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>列表列-正品低价、品质保障、配送及时、轻松购物！</title>
+    <!--网站说明-->
+     <meta name="description" content="品优购-专业的综合网上购物商城，为您提供正品低价的购物选择、优质便捷的服务体验。商品来自全球数十万品牌商家，
+     囊括家电、手机、电脑、服装、居家、母婴、美妆、个护、食品、生鲜等丰富品类，满足各种购物需求。"/>
+     <!--关键字-->
+     <meta name="Keywords" content="网上购物,网上商城,家电,手机,电脑,服装,居家,母婴,美妆,个护,食品,生鲜,京东"/>
+     <link rel="shortcut icon" href="favicon.ico" />
+     <!-- 引入初始化样式文件 -->
+     <link rel="stylesheet" href="./css/base.css">
+        <!-- 引入公共样式文件 -->
+     <link rel="stylesheet" href="./css/common.css">
+        <!-- 引入列表页的css文件 -->
+    <link rel="stylesheet" href="./css/list.css">
+    <link rel="stylesheet" href="./css/index.css">
+    <script src="./js/jquery-3.6.1.js"></script>
+    <!-- 引入bootstrap框架 -->
+    <script src="./bootstrap-3.4.1-dist/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="./bootstrap-3.4.1-dist/css/bootstrap.css">
+</head>
+<body>
+ <!-- 快捷导航模块 -->
+ <section class="shortcut">
+    <div class="w">
+        <div class="fl">
+            <ul>
+                <li>品优购欢迎你! &nbsp;</li>
+                <li>
+                    <a href="./login.html">请登录</a>
+                </li> 
+                    
+                <li>&nbsp;&nbsp;&nbsp;<a href="register.html" class="style_red">免费注册</a></li>
+                
+            </ul>
+        </div>
+        <div class="fr">
+            <ul>
+                <li><a href="#">我的订单</a></li>
+                <li id="even"></li>
+                <li class="arrow-icon">
+                    <a href="#">我的品优购</a>
+                    <ul>
+                        <li><a href="#">我的淘宝</a></li>
+                        <li><a href="#">已买到的宝贝</a></li>
+                        <li><a href="#">我的足迹</a></li>
+                        <li><a href="#">爱万劫</a></li>
+                        <li><a href="#">淘宝达</a>人</li>
+                        <li><a href="#">新欢</a></li>
+                    </ul>
+                </li>
+                <li id="even"></li>
+                <li><a href="#">会员</a></li>
+                <li id="even"></li>
+                <li><a href="#">企业采购</a></li>
+                <li id="even"></li>
+                <li class="arrow-icon"><a href="#">关注</a></li>
+                <li id="even"></li>
+                <li class="arrow-icon"><a href="#">客户服务</a></li>
+                <li id="even"></li>
+                <li class="arrow-icon"><a href="#">网站导航</a></li>
+            </ul>
+        </div>
+    </div>
+</section>
+<!-- header头部模块制作 start -->
+<header class="header w">
+   <div class="logo">
+       <h1>
+           <a href="index.html">品优购商城</a>
+       </h1>
+   </div>
+    <!-- search搜索框制作 -->
+   <div class="search">
+        <div id="search_div"></div>
+       <input type="search" id="search_input" name="" placeholder="语言开发">
+       <button>搜索</button>
+    </div>
+    <!-- hotwordes模块制作 -->
+    <div class="hotwords">
+        <a href="#" class="style_red">优惠购悚发</a>
+        <a href="#" >一元惠购</a>
+        <a href="#">9.9元团购</a>
+        <a href="#">每满99减30</a>
+        <a href="#">办公用品</a>
+        <a href="#" >电脑</a>
+        <a href="#">通信</a>
+    </div>
+    <!-- shopcar -->
+    <div class="shopcar">
+       <a href="./car.html">我的购物车</a> 
+        <i class="count">4</i>
+    </div>
+
+</header>
+<!-- header头部模块制作 end -->
+<!-- nav模块制作 start-->
+<nav class="nav">
+     <div class="w">
+         <div class="dropdown">
+             <div class="dt">全部商品分类</div>
+             <div class="dd">
+                 <ul>
+                     <li><a href="#">家用电器</a></li>
+                     <li><a href="list.html">手机</a>,<a href="#"> / 运营商</a>,<a href="#"> / 数码</a></li>
+                     <li><a href="#">电脑办公</a></li>
+                     <li><a href="#">家具 / 家居 / 厨具</a></li>
+                     <li><a href="#">男装 / 女装</a></li>
+                     <li><a href="#">个性用户</a></li>
+                     <li><a href="#">箱包 / 珠宝</a></li>
+                     <li><a href="#">运动户外</a></li>
+                     <li><a href="#">汽车</a></li>
+                     <li><a href="#">母婴</a></li>
+                     <li><a href="#">食品 / 酒类</a></li>
+                     <li><a href="#">医药保健</a></li>
+                     <li><a href="#">图书 / 影像</a></li>
+                     <li><a href="#">彩票 / 充值</a></li>
+                     <li><a href="#">理财 / 白条</a></li>
+
+                 </ul>
+             </div>
+         </div>
+         <div class="navitems">
+             <ul>
+                 <li><a href="#" class="style_red">秒杀</a></li>
+                 <li><a href="#" class="style_red">优惠劵</a></li>
+                 <li><a href="#">PLUS会员</a></li>
+                 <li><a href="#">品牌闪购</a></li>
+                 <li><a href="#">拍卖</a></li>
+                 <li><a href="#">家电</a></li>
+                 <li><a href="#">生鲜</a></li>
+                 <li><a href="#">服装城</a></li>
+             </ul>
+         </div> 
+     </div>
+ </nav>
+     <!-- nav模块制作 start-->
+     <!-- 列表页主体 -->
+     <div class="w sk_container">
+         <div class="sk_hd">
+             <img data-lazy-src="upload/1658713368976-1200-90.png" alt="">
+         </div>
+         <div class="sk_bd">
+             <ul class="clearfix">
+                <li>
+                    <img data-lazy-src="upload/洗面奶.PNG" alt="">
+                </li>
+                <li>
+                    <img data-lazy-src="upload/洗面奶.PNG" alt="">
+                </li>
+                <li>
+                    <img data-lazy-src="upload/洗面奶.PNG" alt="">
+                </li>
+                <li>
+                    <img data-lazy-src="upload/洗面奶.PNG" alt="">
+                </li>
+                <li>
+                    <img data-lazy-src="upload/洗面奶.PNG" alt="">
+                </li>
+                <li>
+                    <img data-lazy-src="upload/洗面奶.PNG" alt="">
+                </li>
+                <li>
+                    <img data-lazy-src="upload/洗面奶.PNG" alt="">
+                </li>
+                <li>
+                    <img data-lazy-src="upload/洗面奶.PNG" alt="">
+                </li>
+                <li>
+                    <img data-lazy-src="upload/洗面奶.PNG" alt="">
+                </li>
+                <li>
+                    <img data-lazy-src="upload/洗面奶.PNG" alt="">
+                </li>
+                <li>
+                    <img data-lazy-src="upload/洗面奶.PNG" alt="">
+                </li>
+                <li>
+                    <img data-lazy-src="upload/洗面奶.PNG" alt="">
+                </li>
+                <li>
+                    <img data-lazy-src="upload/洗面奶.PNG" alt="">
+                </li>
+                <li>
+                    <img data-lazy-src="upload/洗面奶.PNG" alt="">
+                </li>
+                <li>
+                    <img data-lazy-src="upload/洗面奶.PNG" alt="">
+                </li>
+                <li>
+                    <img data-lazy-src="upload/洗面奶.PNG" alt="">
+                </li>
+             </ul>
+         </div>
+     </div>
+     <!-- footer模块制作 start-->
+    <footer class="footer">
+        <div class="w">
+           <div class="mod_service">
+               <ul>
+                   <li>
+                       <h5></h5>
+                       <div class="service_text">
+                           <h4>正品保障</h4>
+                           <p>正品保障，提供发货</p>
+                       </div>
+                   </li>
+                   <li>
+                    <h5></h5>
+                    <div class="service_text">
+                        <h4>正品保障</h4>
+                        <p>正品保障，提供发货</p>
+                    </div>
+                </li>
+                <li>
+                    <h5></h5>
+                    <div class="service_text">
+                        <h4>正品保障</h4>
+                        <p>正品保障，提供发货</p>
+                    </div>
+                </li>
+                <li>
+                    <h5></h5>
+                    <div class="service_text">
+                        <h4>正品保障</h4>
+                        <p>正品保障，提供发货</p>
+                    </div>
+                </li>
+                </ul>
+           </div>
+           <div class="mod_help">
+               <dl>
+                   <dt>服务指南</dt>
+                   <dd><a href="#"> 购物流程</a></dd>
+                   <dd><a href="#"> 会员介绍</a></dd>
+                   <dd><a href="#"> 生活旅行</a></dd>
+                   <dd><a href="#">常见问题</a></dd>
+                   <dd><a href="#"> 大家电</a></dd>
+               </dl>
+               <dl>
+                <dt>服务指南</dt>
+                <dd><a href="#"> 购物流程</a></dd>
+                <dd><a href="#"> 会员介绍</a></dd>
+                <dd><a href="#"> 生活旅行</a></dd>
+                <dd><a href="#">常见问题</a></dd>
+                <dd><a href="#"> 大家电</a></dd>
+            </dl>
+            <dl>
+                <dt>服务指南</dt>
+                <dd><a href="#"> 购物流程</a></dd>
+                <dd><a href="#"> 会员介绍</a></dd>
+                <dd><a href="#"> 生活旅行</a></dd>
+                <dd><a href="#">常见问题</a></dd>
+                <dd><a href="#"> 大家电</a></dd>
+            </dl>
+            <dl>
+                <dt>服务指南</dt>
+                <dd><a href="#"> 购物流程</a></dd>
+                <dd><a href="#"> 会员介绍</a></dd>
+                <dd><a href="#"> 生活旅行</a></dd>
+                <dd><a href="#">常见问题</a></dd>
+                <dd><a href="#"> 大家电</a></dd>
+            </dl>
+            <dl>
+                <dt>服务指南</dt>
+                <dd><a href="#"> 购物流程</a></dd>
+                <dd><a href="#"> 会员介绍</a></dd>
+                <dd><a href="#"> 生活旅行</a></dd>
+                <dd><a href="#">常见问题</a></dd>
+                <dd><a href="#"> 大家电</a></dd>
+            </dl>
+            <dl>
+                <dt>服务指南</dt>
+                <dd>
+                    <img data-lazy-src="images/sh.png " alt="" width="90px" >
+                    品优购客户端
+                </dd>
+            </dl>
+           </div>
+           <div class="mod_copyright">
+               <div class="links">
+                    <a href="#"> 关于我们</a>| <a href="#"> 联系我们</a>| <a href="#">联系客服</a>|<a href="#"> 合作招商</a> |<a href="#">关于我们</a> |<a href="#">联系我们</a>| <a href="#">联系客服</a>| <a href="#">合作招商</a>
+               </div>
+               <div cls="copyright">
+                京公网安备1000020000881京ICP备11041704号1 ICP| 互 联网药品信息服务资格证编号(原经营性-2014-0008|新出发京零 字第大120007号<br>
+                互联网出版许可证编号新出网证(京字150号1出版物经营许可证1 网络文化经 营许可证京网文[2020]6112-1201号1违法和不良信息 举报电话: 4006561155
+               </div>
+           </div>
+        </div>
+    </footer>
+    <!-- footer模块制作 end-->
+</body>
+<!-- 点击f可获得搜索框的焦点 -->
+<script src="./js/index.js"></script>
+<!-- 图片懒加载 -->
+<script src="./js/EasyLazyload.min.js"></script>
+<script>
+    lazyLoadInit({
+        showTime:1100,
+        onLoadBackEnd:function(i,e){
+            console.log("onLoadBackEnd:"+i);
+        }
+        ,onLoadBackStart:function(i,e){
+            console.log("onLoadBackStart:"+i);
+        }
+    });
+</script>
+</html>

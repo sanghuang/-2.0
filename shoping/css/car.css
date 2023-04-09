@@ -1,0 +1,56 @@
+/* body{
+    background: url("../images/background.png") no-repeat;
+    background-size: cover;
+}    */
+a {
+    color: black;
+    text-decoration: none;
+}
+img {
+    width: 80px;
+    height: 80px
+}
+   
+.header{
+    height: 105px;
+    padding-left: 360px;
+}
+.logo{
+    top:25px;
+    width: 171px;
+    height: 61px;
+}
+.logo a{
+    display: block;
+    width: 171px;
+    height: 61px;
+    background:url(../images/logo.png) no-repeat;
+    /* 隐藏品优购商城字体 */
+    font-size:0;
+    /* text-indent:-999px;
+    overflow: hidden; */
+} 
+.mony {
+    width: 20px;
+    text-align: center;
+}
+#biaoti:hover{
+    color:#c81632;
+    cursor: pointer;
+}
+#biaoti{
+    margin-left: 12px;
+    padding-left:12px;
+}
+.deletthis:hover{
+    color:#e11231;
+    cursor: pointer;
+}
+.chosedelet:hover{
+    color:#e11231;
+    cursor: pointer;
+}
+.clearall:hover{
+    color:#e11231;
+    cursor: pointer;
+}
